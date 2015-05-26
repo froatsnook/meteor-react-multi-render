@@ -1,0 +1,18 @@
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+  <button id="toggle-test1">toggle test1</button>
+  <button id="toggle-test2">toggle test2</button>
+  {{#if test1}}
+    <p>If you see this, you should see Test 1 once</p>
+    {{> Component1 }}
+  {{/if}}
+
+  {{#if test2}}
+    <p>If you see this, you should see Test 2 once</p>
+    {{> Component2 }}
+  {{/if}}
+</template>
+
